@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.movie-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-slide {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.movie-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.movie-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-selector {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie-selector button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.movie-selector button:hover {
+    background-color: #555;
+}
+
+.booking-area {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.seats{
+    display: flex;
+}
+
+.booking-area .seat {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.booking-area .seat.selected {
+    background-color: #ff0000;
+}
+

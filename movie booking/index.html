@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Movie Booking</h1>
+    </header>
+    
+    <div class="movie-carousel">
+        <div class="movie-slide active">
+            <img src="" alt="Movie 1">
+        </div>
+        <div class="movie-slide">
+            <img src="" alt="Movie 2">
+        </div>
+        <div class="movie-slide">
+            <img src="" alt="Movie 3">
+        </div>
+    </div>
+    
+    <div class="movie-selector">
+        <button onclick="showMovie(1)">Movie 1</button>
+        <button onclick="showMovie(2)">Movie 2</button>
+        <button onclick="showMovie(3)">Movie 3</button>
+    </div>
+    
+    <div class="booking-area">
+        <h2>Choose your seats</h2>
+        <div id="seats" class="seats"></div>
+        <p>Total: <span id="total">0</span> USD</p>
+        <button onclick="bookSeats()">Book</button>
+    </div>
+    
+
+
+    <script src="booking.js"></script>
+</body>
+</html>
